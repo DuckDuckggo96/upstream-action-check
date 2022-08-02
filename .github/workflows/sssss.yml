@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - run: echo  ${{github.ref}} ${{github.repository.name}}  ${{github.event.pull_request.head.repo.full_name}}
+      - run: echo  ${{github.ref}} ${{github.repository.name}} 
