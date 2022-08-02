@@ -1,14 +1,13 @@
 name: pull-request
 on:
   pull_request:
-    # Sequence of patterns matched against refs/heads
-    branches:    
-      - 'DuckDuckggo96/**'
-      - 'jaeyoung0509/**'
-
+    branches:
+      - develop
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        with:
+          ref: ${{github.event.pull_request.head.ref}}
+          repository: ${{github.event.pull_request.head.repo.full_name}}
