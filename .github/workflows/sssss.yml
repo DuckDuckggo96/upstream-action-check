@@ -6,6 +6,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          repository: ${{github.repository}}
+      - name: Debug
+        run: echo ${{ env.BRANCH_NAME }}
