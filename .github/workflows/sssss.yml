@@ -2,7 +2,10 @@ name: pull-request
 on:
   pull_request:
     branches:
-        - 'main/*/*/*'
+        - 'main'
+        - 'DuckDuckggo95/**'
+        - 'jaeyoung0509/**'
+        - 'main/**'
 
 jobs:
   test:
