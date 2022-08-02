@@ -1,15 +1,12 @@
-name: pull-request
-on: 
-  pull_request
+name: pull-request-target
+on:
+  pull_request_target:
     branches:
-      - main
+      - develop
 
 jobs:
-  integrate:
+  test:
     runs-on: ubuntu-latest
-    environment:
-      name: development
-
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
