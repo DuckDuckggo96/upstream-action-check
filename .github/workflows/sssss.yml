@@ -1,15 +1,12 @@
 name: pull-request
-on:
-  pull_request:
-    branches:
-        - 'main'
+on: 
+  pull_request
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{github.event.pull_request.head.ref}}
-          repository: ${{github.event.pull_request.head.repo.full_name}}
-      - run: echo  ${{github.event.pull_request.head.ref}}  ${{github.event.pull_request.head.repo.full_name}}
+      - uses: actions/setup-node@v2
+      - run: npm test
