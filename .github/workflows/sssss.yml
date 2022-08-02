@@ -3,8 +3,6 @@ on:
   pull_request:
     branches:
         - 'main'
-        - 'DuckDuckggo95/**'
-        - 'jaeyoung0509/**'
         - 'main/**'
 
 jobs:
