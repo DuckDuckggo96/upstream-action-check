@@ -7,8 +7,7 @@ dasdasadsdasadssadads
 sssssss
 hhhhhsadadsadssadsad
 dfgdfg
-ㅇㄹㄴㄴㄹㅇㄴㅇㄹㅇㄹㄴㄹㅇㄴㅇㄹㄴdgfgdf
-gggdfgdfgcvbcbvbvccbv
+
 fghfgffff
 gggdfgdfgsdf
 fghfgcvbcvbvc
