@@ -1,8 +1,6 @@
 name: pull-request-target
 on:
   pull_request_target:
-    branches:
-      - develop
 
 jobs:
   test:
