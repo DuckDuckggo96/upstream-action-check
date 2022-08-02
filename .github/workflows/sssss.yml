@@ -2,9 +2,8 @@ name: pull-request
 on:
   pull_request:
     branches:
-        - 'jaeyoung0509/main'
-        - 'jaeyoung0509/**'
-        - 'main/**'
+        - 'main'
+        - 'DuckDuckggo96/**'
 
 jobs:
   test:
