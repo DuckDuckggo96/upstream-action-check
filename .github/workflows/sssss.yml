@@ -6,4 +6,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo  ${{github.repository.name}}  ${{github.event.pull_request.head.repo.full_name}}
+      - run: echo  ${{github.ref}} ${{github.repository.name}}  ${{github.event.pull_request.head.repo.full_name}}
