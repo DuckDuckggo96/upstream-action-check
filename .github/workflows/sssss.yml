@@ -5,7 +5,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: ${{github.event.pull_request.head.repo.full_name == 'DuckDUckggo96'}} && ${{GITHUB_HEAD_REF	== 'main'}}
+    if: ${{github.event.pull_request.head.repo.full_name == 'DuckDUckggo96'}}
     steps: 
       - run: echo  ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.repo.full_name}} $GITHUB_HEAD_REF 
  
