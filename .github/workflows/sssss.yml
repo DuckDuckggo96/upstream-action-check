@@ -3,7 +3,7 @@ name: pull-request
 on: 
   pull_request:
     branches:
-      - 'remotes/upstream/main'
+      - 'remotes/main'
 jobs:
   test:
     runs-on: ubuntu-latest
