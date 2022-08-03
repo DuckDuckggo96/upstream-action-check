@@ -12,7 +12,6 @@ fghㄲㄲffff
 gggdfgdfgsdfrrsffsdfsdf
 fghfgcvbcvbvcqwr
 sdfsdfsdfgfgfㄴㅇㄹㅇㄴㄹㅇsfd
-ffff
-dfgdfgdfg
+ffffvnbvbnbnv
 fffㅅ
 ㅅsdfsdf
