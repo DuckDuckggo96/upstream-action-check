@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps: 
-      - run: echo  ${{github.event.pull_request}}   ${{github.event.pull_request.head}}   ${{github.event.pull_request.head.repo.full_name}} {{github.event.pull_request.head.repo.full_name}}
+      - run: echo  ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.repo.full_name}}
  
