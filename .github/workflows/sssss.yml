@@ -3,10 +3,10 @@ on:
   pull_request
 jobs:
   test:
+    runs-on: ubuntu-latest
     env:
       JAEYOUNG: 'jaeyoung0509/upstream-action-check'
       AB: 'DuckDuckggo96/upstream-action-check'
-    runs-on: ubuntu-latest
     if: ${{github.event.pull_request.head.repo.full_name  == env.JAEYOUNG || env.AB}} && ${{github.event.pull_request.head.ref == 'main'}}
     steps: 
       - run: echo  ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.ref}}
