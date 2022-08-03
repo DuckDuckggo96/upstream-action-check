@@ -5,7 +5,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: ${{github.event.pull_request.head.repo.full_name == 'DuckDuckggo96/upstream-action-check'}}
+    if: ${{github.event.pull_request.head.repo.full_name == 'DuckDuckggo96/upstream-action-check'}} && ${{github.event.pull_request.head.ref == "main"}}
     steps: 
       - run: echo  ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.ref}}
  
