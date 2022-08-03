@@ -14,5 +14,4 @@ fghfgcvbcvbvcqwr
 sdfsdfsdfgfgfㄴㅇㄹㅇㄴㄹㅇsljkljkfd
 ffffvnbvbnbnv
 fffㅅ
-ㅅsdfsdf
-asdasdas
+ㅅsdfsdfdfsdfsdfs
