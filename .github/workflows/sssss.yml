@@ -1,11 +1,13 @@
 name: pull-request
 on: 
   pull_request
-
+env:
+  JAEYOUNG: 'jaeyoung0509/upstream-action-check'
+  AB: 'DuckDuckggo96/upstream-action-check'
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: ${{github.event.pull_request.head.repo.full_name == 'DuckDuckggo96/upstream-action-check'}} && ${{github.event.pull_request.head.ref == 'main'}}
+    if: contains('['{$JAEYOUNG},${AB}]',{${{github.event.pull_request.head.repo.full_name }}) && ${{github.event.pull_request.head.ref == 'main'}}
     steps: 
       - run: echo  ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.repo.full_name}} ${{github.event.pull_request.head.ref}}
  
